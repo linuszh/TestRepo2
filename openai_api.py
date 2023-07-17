@@ -1,18 +1,14 @@
-```python
 import openai
+import os
 
-# Set up OpenAI API
-def setup_openai():
-    openai.api_key = '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'
+openai_key = os.getenv("OPENAI_KEY", "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")
+openai.api_key = openai_key
 
-# Generate summary with OpenAI
-def generate_summary(prompt):
-    setup_openai()
+def generate_summary(text):
     response = openai.Completion.create(
-      engine="davinci-codex",
-      prompt=prompt,
-      temperature=0.5,
-      max_tokens=100
+        engine="text-davinci-002",
+        prompt=text,
+        temperature=0.5,
+        max_tokens=100
     )
     return response.choices[0].text.strip()
-```
