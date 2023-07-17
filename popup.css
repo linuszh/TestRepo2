@@ -1,0 +1,45 @@
+#popup {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+#summaryButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#summaryButton:hover {
+    background-color: #45a049;
+}
+
+#summaryDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#optionsButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#optionsButton:hover {
+    background-color: #007B9A;
+}
